@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/jquery/tutorials/bootstrap/tutorial-3/3/css/bootstrap.min.css"
+        rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/jquery/tutorials/bootstrap/tutorial-3/3/css/mdb.min.css"
+        rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/jquery/tutorials/bootstrap/tutorial-3/3/css/style.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <title>Bolsa De Empleo PJMIC</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark double-nav  fixed-top scrolling-navbar">
+
+                <!-- SideNav slide-out button -->
+                <div class="float-left">
+                    <a href="#" data-activates="slide-out" class="button-collapse">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+        </nav>
+    </header>
+
+    <div id="slide-out" class="side-nav fixed sn-bg-4">
+            <ul class="custom-scrollbar list-unstyled">
+                <!-- Logo -->
+                <li class="logo-sn waves-effect">
+                    <div class=" text-center">
+                        <a href="#" class="pl-0">
+                            <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="">
+                        </a>
+                    </div>
+                </li>
+                <!--/. Logo -->
+                <!--Search Form-->
+                <li>
+                    <form class="search-form" role="search">
+                        <div class="form-group waves-light">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                </li>
+                <!--/.Search Form-->
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r" href="index.html">
+                                <i class="fa fa-home"></i> Inicio
+                                <i class="fa fa-angle-down rotate-icon"></i>
+                            </a>
+                        </li>                        
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r"href="html/aboutUs.html" >
+                                <i class="fa fa-eye"></i> Nosotros
+                                <i class="fa fa-angle-down rotate-icon"></i>
+                            </a>                           
+                        </li>
+                        <li>
+                                <a class="collapsible-header waves-effect arrow-r" href="html/contactUs.html">
+                                    <i class="fa fa-envelope-o"></i> Contáctenos
+                                    <i class="fa fa-angle-down rotate-icon"></i>
+                                </a>
+                        </li>
+                        <li>
+                                <a class="collapsible-header waves-effect arrow-r" onclick="iniciosesion('entrar')">
+                                    <i class="fa fa-sign-in"></i>Inicio de Sesión
+                                    <i class="fa fa-angle-down rotate-icon"></i>
+                                </a>                           
+                            </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r" href="html/contactUs.html">
+                                <i class="fa fa-envelope-o"></i> Contáctenos
+                                <i class="fa fa-angle-down rotate-icon"></i>
+                            </a>
+                            <div class="collapsible-body">
+                                <ul id="menu">
+                                    <li>
+                                        <a href="index.html" class="waves-effect">Inicio</a>
+                                    </li>
+                                    <li>
+                                        <a href="html/aboutUs.html" class="waves-effect">Nosotros</a>
+                                    </li>
+                                    <li>
+                                        <a href="html/contactUs.html" class="waves-effect">Contáctenos</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="iniciosesion('entrar')" href="#" class="waves-effect">Inicio de Sesión</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!--/. Side navigation links -->
+            </ul>
+
+            <!-- Mask -->
+            <div class="sidenav-bg mask-strong"></div>
+
+        </div>
+        <section id="containerLogin" style="display: block;">
+                <form action="" method="GET">
+                        <h2>Inicio De Sesión</h2>
+                        <label for="contrasena">Identificación</label>
+                        <input type="text" name="contrasena" id="contrasena">
+                        <label for="Email">Contraseña</label>
+                        <input type="text" name="contrasena" id="contrasena">
+                        <div class="botones">
+                        <input type="button" value="Entrar">
+                        <input type="button" onclick="iniciosesion('cerrar')" value="Cancelar">
+                        </div>
+                    </form>
+        </section>   
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>
+                    <a href="index.html">BOLSA DE EMPLEO PJIC</a>
+                </h1>
+            </div>
+            <div id="icon">
+                <span></span>
+                <span class="derecha"></span>
+                <span class="izquierda"></span>
+                <span></span>
+            </div>
+            <div id="menuresponsive" class="invisible">
+                <div id="buscador">
+                    <input class="search" type="search" name="search_ofertas" id="search_Ofertas">
+                </div>
+                <ul id="menu">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="html/aboutUs.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="html/contactUs.html">Contáctenos</a>
+                    </li>
+                    <li>
+                        <a onclick="iniciosesion('entrar')" href="#">Inicio de Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <h1>Ofertas De Prácticas</h1>
+        <div class="paginas">
+            <div class="pagination 1">
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <section id="containerPostulate">
+                    <form action="" method="GET">
+                            <h2>Inicio De Sesión</h2>
+                            <label for="contrasena">Identificación</label>
+                            <input type="text" name="contrasena" id="contrasena">
+                            <label for="Email">Contraseña</label>
+                            <input type="text" name="contrasena" id="contrasena">
+                            <div class="botones">
+                            <input type="button" value="Entrar">
+                            <input type="button" onclick="iniciosesion('cerrar')" value="Cancelar">
+                            </div>
+                        </form>
+            </section>
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination 2">
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa2</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa2</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa2</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa2</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa2</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa2</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa2</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa2</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa2</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination 3">
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa3</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa2</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa3</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa3</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa3</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa3</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa3</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa3</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa3</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination 4">
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa 4</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination 5">
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa 5</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+
+
+                <div class="card card--big">
+                    <h2 class="card__title">Oferta Empresa</h2>
+                    <a class="card__subtitle" href="">
+                        <p>Nombre Empresa</p>
+                    </a>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam, tempora voluptates consectetur eveniet molestias
+                        velit quis vel nam deleniti maxime perspiciatis sapiente adipisci magnam
+                    </p>
+                    <div class="perfil">
+                        <h3>Perfil Requerido</h3>
+                        <ul class="card__text">
+                            <li>Analisis y Desarrollo de Información</li>
+                        </ul>
+                    </div>
+                    <div class="card__action-bar">
+                        <button class="card__button mas-info">Más información</button>
+                        <button class="card__button Postulate">Postúlate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paginacion">
+            <ul>
+                <li>
+                    <span onclick="anterior()">&lsaquo;</span>
+                </li>
+                <li>
+                    <span id="1" onclick="activar(1)" class="active">1</span>
+                </li>
+                <li>
+                    <span id="2" onclick="activar(2)">2</span>
+                </li>
+                <li>
+                    <span id="3" onclick="activar(3)">3</span>
+                </li>
+                <li>
+                    <span id="4" onclick="activar(4)">4</span>
+                </li>
+                <li>
+                    <span id="5" onclick="activar(5)">5</span>
+                </li>
+                <li>
+                    <span onclick="proxima()">&rsaquo;</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/jquery/tutorials/bootstrap/tutorial-3/3/js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/jquery/tutorials/bootstrap/tutorial-3/3/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/jquery/tutorials/bootstrap/tutorial-3/3/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/content/jquery/tutorials/bootstrap/tutorial-3/3/js/mdb.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/pagination.js"></script>
+
+    <script>
+            // SideNav Initialization
+            $(".button-collapse").sideNav();
+            $(document).ready(function () {
+                $('.mdb-select').material_select();
+            });
+            // Data Picker Initialization
+            $('.datepicker').pickadate();
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+        <script>
+            // Minimalist chart
+            $(function () {
+                $('.min-chart#chart-sales').easyPieChart({
+                    barColor: "#4caf50",
+                    onStep: function (from, to, percent) {
+                        $(this.el).find('.percent').text(Math.round(percent));
+                    }
+                });
+            });
+            // Main chart
+            var ctxL = document.getElementById("lineChart").getContext('2d');
+            var myLineChart = new Chart(ctxL, {
+                type: 'line',
+                data: {
+                    labels: ["January", "February", "March", "April", "May", "June", "July"],
+                    datasets: [{
+                        label: "My First dataset",
+                        fillColor: "#fff",
+                        backgroundColor: 'rgba(255, 255, 255, .3)',
+                        borderColor: 'rgba(255, 99, 132)',
+                        data: [0, 10, 5, 2, 20, 30, 45],
+                    }]
+                },
+                options: {
+                    legend: {
+                        labels: {
+                            fontColor: "#fff",
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            gridLines: {
+                                display: true,
+                                color: "rgba(255,255,255,.25)"
+                            },
+                            ticks: {
+                                fontColor: "#fff",
+                            },
+                        }],
+                        yAxes: [{
+                            display: true,
+                            gridLines: {
+                                display: true,
+                                color: "rgba(255,255,255,.25)"
+                            },
+                            ticks: {
+                                fontColor: "#fff",
+                            },
+                        }],
+                    }
+                }
+            });
+        </script>
+        <!-- Alerts -->
+        <!-- Alerts -->
+    <script>
+        $(function () {
+            $('#folder-1').click(function () {
+                toastr.error("Folder 1 has been clicked!", "Folder 1", {
+                    "positionClass": "toast-top-right",
+                });
+            });
+            $('#folder-2').click(function () {
+                // make it not dissappear
+                toastr.info("Folder 2 has been clicked!", "Folder 2", );
+            });
+            $('#folder-3').click(function () {
+                // make it not dissappear
+                toastr.info("Folder 3 has been clicked!", "Folder 3", );
+            });
+        });
+    </script>
+        
+</body>
+
+
+
+</html>

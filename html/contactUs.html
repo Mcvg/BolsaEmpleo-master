@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contáctenos</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/contactUs.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+        <section id="containerLogin">
+                <form action="" method="GET">
+                        <h2>Inicio De Sesión</h2>
+                        <label for="contrasena">Identificación</label>
+                        <input type="text" name="contrasena" id="contrasena">
+                        <label for="Email">Contraseña</label>
+                        <input type="text" name="contrasena" id="contrasena">
+                        <div class="botones">
+                        <input type="button" value="Entrar">
+                        <input type="button" onclick="iniciosesion('cerrar')" value="Cancelar">
+                        </div>
+                    </form>
+        </section>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>
+                    <a href="../index.html">BOLSA DE EMPLEO PJIC</a>
+                </h1>
+            </div>
+            <div id="icon">
+                <span></span>
+                <span class="derecha"></span>
+                <span class="izquierda"></span>
+                <span></span>
+            </div>
+            <div id="menuresponsive" class="invisible">
+                <div id="buscador">
+                    <i class="fa fa-search"></i>
+                    <input class="search" type="search" name="search_ofertas" id="search_Ofertas">
+                </div>
+                <ul id="menu">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="contactUs.html">Contáctenos</a>
+                    </li>
+                    <li>
+                        <a onclick="iniciosesion('entrar')">Inicio de Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Contáctenos</h1>
+        <div class="principal">
+            <div class="izquierda">
+                <form action="" method="GET">
+                    <h2>Formulario</h2>
+                    <label for="Name">Nombre</label>
+                    <input type="text" name="Name" id="Name">
+                    <label for="Email">Correo</label>
+                    <input type="email" name="Email" id="Email">
+                    <label for="Menssage">Mensaje</label>
+                    <textarea name="Menssage" rows="7" style="height: 25%;"></textarea>
+                    <input type="button" value="Enviar">
+                </form>
+            </div>
+            <div class="derecha">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5609.326004461512!2d-75.58027150514!3d6.211859267790445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429d458b9e19b%3A0xa41de7af3f199040!2sPolit%C3%A9cnico+Jaime+Isaza+Cadavid!5e0!3m2!1ses!2sco!4v1520536837002"
+                    height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

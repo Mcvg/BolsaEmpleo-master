@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/aboutUs.css" rel="stylesheet" type="text/css">
+    <title>Nosotros</title>
+</head>
+
+<body>
+        <section id="containerLogin">
+                <form action="" method="GET">
+                        <h2>Inicio De Sesión</h2>
+                        <label for="contrasena">Identificación</label>
+                        <input type="text" name="contrasena" id="contrasena">
+                        <label for="Email">Contraseña</label>
+                        <input type="text" name="contrasena" id="contrasena">
+                        <div class="botones">
+                        <input type="button" value="Entrar">
+                        <input type="button" onclick="iniciosesion('cerrar')" value="Cancelar">
+                        </div>
+                    </form>
+        </section>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>
+                    <a href="../index.html">BOLSA DE EMPLEO PJIC</a>
+                </h1>
+            </div>
+            <div id="icon">
+                <span></span>
+                <span class="derecha"></span>
+                <span class="izquierda"></span>
+                <span></span>
+            </div>
+            <div id="menuresponsive" class="invisible">
+                <div id="buscador">
+                    <i class="fa fa-search"></i>
+                    <input class="search" type="search" name="search_ofertas" id="search_Ofertas">
+                </div>
+                <ul id="menu">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="contactUs.html">Contáctenos</a>
+                    </li>
+                    <li>
+                        <a onclick="iniciosesion('entrar')">Inicio de Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Nosotros</h1>
+        <div class="principal">
+            <div class="derecha">
+                <img src="../img/JIC.png" alt="Politecnico Jaime Isaza Cadavid">
+            </div>
+            <div class="izquierda">
+                <h1>¿Quiénes Somos?</h1>
+                <br/>
+                <p>
+                    Somos una plataforma que presta un servicio intermediaron para que los estudiantes del Politécnico Jaime Isaza Cadavid puedan
+                    buscar prácticas con las grandes empresas nacionales e internacionales, tengan varias opciones para hacer
+                    las prácticas; encuentre emprsas que se acomoden tanto a tú perfil profesional como a tú perfil ético
+                    y te sientas a gusto con la empresa; todos los días trabajamos para hacernos conocer y que cada vez se
+                    han más las empresas las que publiquen más ofertas y así el politécnico se ha reconocido por ser una
+                    institución universitaria por tener una amplía variedad de empresas para hacer prácticas.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
